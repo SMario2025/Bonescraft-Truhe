@@ -1,0 +1,19 @@
+name: BonesChestProtect
+version: 1.0.1
+main: de.bonescraft.boneschest.BonesChestProtectPlugin
+api-version: '1.20'
+author: Bonescraft
+commands:
+  bcp:
+    description: BonesChestProtect commands
+    usage: /bcp <trust|untrust|info|claim|reload>
+permissions:
+  boneschestprotect.openall:
+    description: Can open any protected chest (still view-only unless take permission)
+    default: op
+  boneschestprotect.takeall:
+    description: Can take items from any protected chest
+    default: op
+  boneschestprotect.admin:
+    description: Full bypass incl. breaking protected chests
+    default: op

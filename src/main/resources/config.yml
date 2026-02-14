@@ -1,0 +1,26 @@
+# BonesChestProtect
+#
+# Default behaviour:
+# - Owner can open/take/place items
+# - Trusted players can open/take/place items
+# - Others can OPEN but are VIEW-ONLY (cannot take/put, cannot shift-click)
+# - Others cannot BREAK protected containers
+# - Ops/admin can do everything
+# - Hoppers/automation are ALWAYS allowed (this keeps farms working)
+
+protected-blocks:
+  - CHEST
+  - BARREL
+
+messages:
+  no-permission: "&cDazu hast du keine Rechte."
+  not-your-container: "&cDas ist nicht deine Truhe."
+  view-only: "&eNur ansehen: Du kannst hier nichts rausnehmen oder reinlegen."
+  trusted-added: "&aSpieler vertraut."
+  trusted-removed: "&aSpieler entfernt."
+  info: "&7Owner: &f%owner% &7| Trusted: &f%trusted%"
+
+# Permission nodes (for LuckPerms)
+perm-open-all: "boneschestprotect.openall"
+perm-take-all: "boneschestprotect.takeall"
+perm-admin: "boneschestprotect.admin"
